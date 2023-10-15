@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChallengeN5.Business.Process
 {
-    public class UserProcess
+    public class PermissionProcess
     {
         static public int Test()
         {
