@@ -1,0 +1,14 @@
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\bin\Debug\net6.0\ChallengeN5.Data.deps.json
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\bin\Debug\net6.0\ChallengeN5.Data.runtimeconfig.json
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\bin\Debug\net6.0\ChallengeN5.Data.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\bin\Debug\net6.0\ChallengeN5.Data.pdb
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.csproj.AssemblyReference.cache
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.AssemblyInfoInputs.cache
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.AssemblyInfo.cs
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.csproj.CoreCompileInputs.cache
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\refint\ChallengeN5.Data.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.pdb
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ChallengeN5.Data.genruntimeconfig.cache
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Data\obj\Debug\net6.0\ref\ChallengeN5.Data.dll
