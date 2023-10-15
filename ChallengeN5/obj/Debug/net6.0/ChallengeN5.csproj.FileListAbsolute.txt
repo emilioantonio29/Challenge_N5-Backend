@@ -30,3 +30,5 @@ C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\obj\Debug\net6.
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\obj\Debug\net6.0\ChallengeN5.pdb
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\obj\Debug\net6.0\ChallengeN5.genruntimeconfig.cache
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\obj\Debug\net6.0\ref\ChallengeN5.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\bin\Debug\net6.0\ChallengeN5.Business.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5\bin\Debug\net6.0\ChallengeN5.Business.pdb

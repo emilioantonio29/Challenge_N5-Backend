@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ChallengeN5.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ChallengeN5.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChallengeN5.Business.dll": {}
+        }
       }
     }
   },
@@ -429,10 +439,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ChallengeN5.Business/1.0.0": {
+      "type": "project",
+      "path": "../ChallengeN5.Business/ChallengeN5.Business.csproj",
+      "msbuildProject": "../ChallengeN5.Business/ChallengeN5.Business.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ChallengeN5.Business >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -470,7 +486,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Business\\ChallengeN5.Business.csproj": {
+              "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Business\\ChallengeN5.Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
