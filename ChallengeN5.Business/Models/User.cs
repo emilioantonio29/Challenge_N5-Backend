@@ -19,7 +19,7 @@ namespace ChallengeN5.Business.Models
 
     public class UserResponseModel
     {
-        public int id { get; set; }
+        public object id { get; internal set; }
         public string username { get; set; }
     }
 }

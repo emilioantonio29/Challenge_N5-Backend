@@ -1,10 +1,10 @@
 ﻿using ChallengeN5.Business.Models;
+using ChallengeN5.Business.Utils;
+using ChallengeN5.Data.Entities;
 using ChallengeN5.Data.Repositories.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ChallengeN5.Data.Repositories.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ChallengeN5.Business.Process
 {
@@ -16,14 +16,40 @@ namespace ChallengeN5.Business.Process
         {
             _userRepository = userRepository;
         }
-        public async Task<int> UserTest(UserViewModel data)
+        public async Task<IActionResult> LoginProcess(UserViewModel data)
         {
-            Console.WriteLine("UserTest");
-            await Task.Delay(2000);
+            try 
+            { 
+                var res = await _userRepository.GetUserByUsername(data.username);
 
-            var res = await _userRepository.GetUserByUsername(data.username);
+                if (res != null)
+                {
+                    if (data.password == res.Password) 
+                    {
+                        return ResponseCode.CustomResult(
+                            HttpStatusCode.OK,
+                            new UserResponseModel
+                            {
+                                id = res.Id,
+                                username = res.Username
+                            }
+                        );
 
-            return 1;
+                    }
+                    else 
+                    {
+                        return ResponseCode.CustomResult(HttpStatusCode.Unauthorized);
+                    }
+                }
+                else 
+                {
+                    return ResponseCode.CustomResult(HttpStatusCode.Unauthorized);
+                }
+            }
+            catch (Exception ex) 
+            {
+                return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
+            }
         }
     }
 }

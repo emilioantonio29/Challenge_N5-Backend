@@ -19,8 +19,7 @@ namespace ChallengeN5.Controllers
         [HttpPost]
         public async Task<IActionResult> UserLogin([FromBody] UserViewModel data)
         {
-            int res = await _userProcess.UserTest(data);
-            return Ok(data);
+            return await _userProcess.LoginProcess(data);
         }
 
     }
