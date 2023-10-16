@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0DkPSolWmZ9ZE5koenoFtk3MbQbCNgKn1wIy+Wg/AxaL2AjJffvfn+Cg4INjzLMwx7LPiQqYPmG9tKNSehD8xg==",
+  "dgSpecHash": "BKKa1scPzOncEdGQ85TBg9Cw+IRlbOLUvMhMwLbtkXlOtM50OPTNtC/lOMCVNfpjgcAGvsRT9glPdN4GQ7n6XA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5\\ChallengeN5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emili\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Emili\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

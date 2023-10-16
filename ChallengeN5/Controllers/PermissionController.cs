@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChallengeN5.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Api/[controller]/[action]")]
     [ApiController]
     public class PermissionController : ControllerBase
     {

@@ -11,14 +11,15 @@ namespace ChallengeN5.Business.Models
     {
         [Required]
         [StringLength(50)]
-        public string Username { get; set; }
+        public string username { get; set; }
+        [Required]
         [StringLength(50)]
-        public string Password { get; set; }
+        public string password { get; set; }
     }
 
     public class UserResponseModel
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
+        public int id { get; set; }
+        public string username { get; set; }
     }
 }

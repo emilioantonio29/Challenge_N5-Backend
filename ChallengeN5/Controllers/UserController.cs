@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChallengeN5.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Api/[controller]/[action]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -16,11 +16,11 @@ namespace ChallengeN5.Controllers
             _userProcess = userProcess;
         }
 
-        [HttpPost(Name = "GetUser")]
-        public async Task<int> Login([FromBody] UserViewModel data)
+        [HttpPost]
+        public async Task<IActionResult> UserLogin([FromBody] UserViewModel data)
         {
-            int res = await _userProcess.UserTest();
-            return res;
+            int res = await _userProcess.UserTest(data);
+            return Ok(data);
         }
 
     }

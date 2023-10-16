@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChallengeN5.Data.Migrations
 {
     [DbContext(typeof(ChallengeN5DbContext))]
-    [Migration("20231015194056_Initial")]
+    [Migration("20231016173514_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

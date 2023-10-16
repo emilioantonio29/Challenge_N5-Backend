@@ -33,7 +33,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Data\\ChallengeN5.Data.csproj": {
+                "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Data\\ChallengeN5.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -187,6 +191,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

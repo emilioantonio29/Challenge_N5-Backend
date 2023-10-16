@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeN5.Data\ChallengeN5.Data.csproj" />
+  </ItemGroup>
+
 </Project>

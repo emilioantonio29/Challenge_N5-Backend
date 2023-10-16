@@ -9,3 +9,7 @@ C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\De
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\refint\ChallengeN5.Business.dll
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ChallengeN5.Business.pdb
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ref\ChallengeN5.Business.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\Debug\net6.0\ChallengeN5.Data.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\Debug\net6.0\ChallengeN5.Data.pdb
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ChallengeN5.Business.csproj.AssemblyReference.cache
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ChallengeN5.Business.csproj.CopyComplete
