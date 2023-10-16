@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChallengeN5.Business.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,17 @@ using System.Threading.Tasks;
 
 namespace ChallengeN5.Business.Process
 {
-    public class PermissionProcess
+    public class UserProcess
     {
-        static public int Test()
+        public UserProcess() 
+        { 
+            
+        }
+        public async Task<int> UserTest()
         {
-            return 0;
+            Console.WriteLine("UserTest");
+            await Task.Delay(2000);
+            return 1;
         }
     }
 }

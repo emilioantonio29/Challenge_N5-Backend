@@ -1,4 +1,5 @@
-﻿using ChallengeN5.Business.Process;
+﻿using ChallengeN5.Business.Models;
+using ChallengeN5.Business.Process;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +9,19 @@ namespace ChallengeN5.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        [HttpPost(Name = "GetUser")]
-        public object Post([FromBody] object data)
+        private UserProcess _userProcess;
+
+        public UserController(UserProcess userProcess) 
         {
-            Console.WriteLine(UserProcess.Test());
-            return data;
+            _userProcess = userProcess;
         }
+
+        [HttpPost(Name = "GetUser")]
+        public async Task<int> Login([FromBody] UserViewModel data)
+        {
+            int res = await _userProcess.UserTest();
+            return res;
+        }
+
     }
 }

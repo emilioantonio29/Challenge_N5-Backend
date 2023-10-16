@@ -1,3 +1,4 @@
+using ChallengeN5.Business.Process;
 using ChallengeN5.Data.ChallengeN5_DbContext;
 using ChallengeN5.Data.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -9,8 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ChallengeN5DbContext>(options => options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:DefaultConnection").Value));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddScoped<UserProcess>();
+builder.Services.AddScoped<PermissionProcess>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 

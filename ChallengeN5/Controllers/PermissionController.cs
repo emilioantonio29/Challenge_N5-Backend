@@ -8,10 +8,17 @@ namespace ChallengeN5.Controllers
     [ApiController]
     public class PermissionController : ControllerBase
     {
+        private PermissionProcess _permissionProcess;
+
+        public PermissionController(PermissionProcess permissionProcess)
+        {
+            _permissionProcess = permissionProcess;
+        }
+
         [HttpPost(Name = "EndpointTest")]
         public object Get([FromBody] object data)
         {
-            Console.WriteLine(PermissionProcess.Test());
+            Console.WriteLine(_permissionProcess.Test());
             return data;
         }
     }
