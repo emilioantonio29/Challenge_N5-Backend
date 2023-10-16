@@ -1,5 +1,5 @@
-﻿using ChallengeN5.Business.Process;
-using Microsoft.AspNetCore.Http;
+﻿using ChallengeN5.Business.Models;
+using ChallengeN5.Business.Process;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChallengeN5.Controllers
@@ -15,11 +15,34 @@ namespace ChallengeN5.Controllers
             _permissionProcess = permissionProcess;
         }
 
-        [HttpPost(Name = "EndpointTest")]
-        public object Get([FromBody] object data)
+        [HttpGet]
+        public async Task<IActionResult> GetPermissions()
         {
-            Console.WriteLine(_permissionProcess.Test());
-            return data;
+            return await _permissionProcess.GetPermissionsProcess();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPermissionsRange([FromQuery] PermissionListRangeViewModel data)
+        {
+            return await _permissionProcess.GetPermissionsRangeProcess(data);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPermissionById(int id)
+        {
+            return await _permissionProcess.GetPermissionByIdProcess(id);
+        }
+
+        [HttpGet("{searchValue}")]
+        public async Task<IActionResult> GetPermissionBySearchValue(string searchValue)
+        {
+            return await _permissionProcess.GetPermissionsBySearchValueProcess(searchValue);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdatePermission([FromBody] PermissionViewModel data)
+        {
+            return await _permissionProcess.UpdatePermissionProcess(data);
         }
     }
 }

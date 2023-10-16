@@ -14,6 +14,9 @@ builder.Services.AddDbContext<ChallengeN5DbContext>(options => options.UseSqlSer
 builder.Services.AddScoped<UserProcess>();
 builder.Services.AddScoped<PermissionProcess>();
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<PermissionRepository>();
+builder.Services.AddScoped<PermissionTableRepository>();
+builder.Services.AddScoped<PermissionTypeRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -69,7 +72,7 @@ using (var scope = app.Services.CreateScope())
                     Lastname = "test2" + i + 1,
                     PermissionType = permissionType,
                     PermissionTypeId = permissionType.Id,
-                    Date = new DateTime()
+                    Date = DateTime.Now
                 };
 
                 dbContext.Permissions.Add(permissionObject);

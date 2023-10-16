@@ -34,9 +34,27 @@ namespace ChallengeN5.Data.Repositories.DataAccess
             return await _context.PermissionsTable.ToListAsync();
         }
 
-        public async Task<List<PermissionTable>> GetPermissionsFilter(int initial, int final)
+        public async Task<List<PermissionTable>> GetPermissionsFilter(int initial, int limit)
         {
-            return await _context.PermissionsTable.OrderBy(pt => pt.Date).Skip(initial).Take(final).ToListAsync();
+            return await _context.PermissionsTable.OrderBy(pt => pt.Date).Skip(initial).Take(limit).ToListAsync();
+
+        }
+
+        public async Task<List<PermissionTable>> GetPermissionsListBySearchValue(string searchValue)
+        {
+            if (int.TryParse(searchValue, out int id))
+            {
+                return await _context.PermissionsTable.Where(p => p.Id == id).ToListAsync();
+            }
+            else
+            {
+                searchValue = searchValue.ToLower();
+                return await _context.PermissionsTable
+                    .Where(p => p.Name.ToLower().Contains(searchValue) ||
+                                p.Lastname.ToLower().Contains(searchValue) ||
+                                p.PermissionTypeId.ToString().Contains(searchValue))
+                    .ToListAsync();
+            }
         }
     }
 }

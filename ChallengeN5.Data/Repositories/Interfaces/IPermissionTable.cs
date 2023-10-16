@@ -12,6 +12,7 @@ namespace ChallengeN5.Data.Repositories.Interfaces
         Task<int> CountPermissions();
         Task<T> GetPermissionById(int id);
         Task<List<T>> GetPermissionsList();
-        Task<List<T>> GetPermissionsFilter(int initial, int final);
+        Task<List<T>> GetPermissionsFilter(int initial, int limit);
+        Task<List<T>> GetPermissionsListBySearchValue(string searchValue);
     }
 }

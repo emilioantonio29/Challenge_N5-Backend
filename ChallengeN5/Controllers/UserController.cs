@@ -1,6 +1,5 @@
 ﻿using ChallengeN5.Business.Models;
 using ChallengeN5.Business.Process;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChallengeN5.Controllers
@@ -17,7 +16,7 @@ namespace ChallengeN5.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UserLogin([FromBody] UserViewModel data)
+        public async Task<IActionResult> Login([FromBody] UserViewModel data)
         {
             return await _userProcess.LoginProcess(data);
         }

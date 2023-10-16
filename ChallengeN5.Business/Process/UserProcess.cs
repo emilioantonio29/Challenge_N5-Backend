@@ -1,8 +1,6 @@
 ﻿using ChallengeN5.Business.Models;
 using ChallengeN5.Business.Utils;
-using ChallengeN5.Data.Entities;
 using ChallengeN5.Data.Repositories.DataAccess;
-using ChallengeN5.Data.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
