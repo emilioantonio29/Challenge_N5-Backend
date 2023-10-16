@@ -10,7 +10,6 @@ namespace ChallengeN5.Data.ChallengeN5_DbContext
         public virtual DbSet<PermissionType> PermissionTypes { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<PermissionTable> PermissionsTable { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Permission>()

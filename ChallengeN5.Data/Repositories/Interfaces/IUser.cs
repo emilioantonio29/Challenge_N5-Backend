@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ChallengeN5.Data.Repositories.Interfaces
 {
-    internal interface IUser <T>
+    public interface IUser <T> where T : class
     {
-        Task<T> GetUser(string username);
+        Task<T> GetUserByUsername(string username);
     }
 }

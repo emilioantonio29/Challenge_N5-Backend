@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ChallengeN5.Data.Repositories.Interfaces
 {
-    public interface IPermission<T> where T : class
+    public interface IPermissionType<T> where T : class
     {
-        Task<int> UpdatePermission(T data);
+        Task<T> GetPermissionTypeById(int id);
     }
 }
