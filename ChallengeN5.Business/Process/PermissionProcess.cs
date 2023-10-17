@@ -64,6 +64,7 @@ namespace ChallengeN5.Business.Process
                 return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
             }
         }
+
         public async Task<IActionResult> GetPermissionsRangeProcess(PermissionListRangeViewModel data)
         {
             try
@@ -88,6 +89,7 @@ namespace ChallengeN5.Business.Process
                 return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
             }
         }
+
         public async Task<IActionResult> GetPermissionByIdProcess(int id)
         {
             try
@@ -108,6 +110,7 @@ namespace ChallengeN5.Business.Process
                 return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
             }
         }
+
         public async Task<IActionResult> GetPermissionsBySearchValueProcess(string searchValue)
         {
             try
@@ -128,6 +131,7 @@ namespace ChallengeN5.Business.Process
                 return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
             }
         }
+
         public async Task<IActionResult> UpdatePermissionProcess(PermissionViewModel data)
         {
             try
