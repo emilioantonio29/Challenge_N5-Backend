@@ -9,6 +9,8 @@ namespace ChallengeN5.Data.Repositories.Interfaces
 {
     public interface IPermissionType<T> where T : class
     {
+        Task<List<T>> GetPermissionsList();
+
         Task<T> GetPermissionTypeById(int id);
     }
 }

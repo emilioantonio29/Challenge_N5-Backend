@@ -43,6 +43,27 @@ namespace ChallengeN5.Business.Process
                 return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
             }
         }
+
+        public async Task<IActionResult> GetPermissionTypesProcess()
+        {
+            try
+            {
+                var res = await _permissionTypeRepository.GetPermissionsList();
+
+                if (res.Count > 0)
+                {
+                    return ResponseCode.CustomResult(HttpStatusCode.OK, res);
+                }
+                else
+                {
+                    return ResponseCode.CustomResult(HttpStatusCode.NotFound);
+                }
+            }
+            catch (Exception ex)
+            {
+                return ResponseCode.CustomResult(HttpStatusCode.InternalServerError, ex);
+            }
+        }
         public async Task<IActionResult> GetPermissionsRangeProcess(PermissionListRangeViewModel data)
         {
             try
@@ -93,7 +114,7 @@ namespace ChallengeN5.Business.Process
             {
                 var res = await _permissionTableRepository.GetPermissionsListBySearchValue(searchValue);
 
-                if (res != null)
+                if (res.Count > 0)
                 {
                     return ResponseCode.CustomResult(HttpStatusCode.OK, res);
                 }

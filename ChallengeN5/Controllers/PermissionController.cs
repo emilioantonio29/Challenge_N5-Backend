@@ -22,6 +22,12 @@ namespace ChallengeN5.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> GetPermissionTypes()
+        {
+            return await _permissionProcess.GetPermissionTypesProcess();
+        }
+
+        [HttpGet]
         public async Task<IActionResult> GetPermissionsRange([FromQuery] PermissionListRangeViewModel data)
         {
             return await _permissionProcess.GetPermissionsRangeProcess(data);

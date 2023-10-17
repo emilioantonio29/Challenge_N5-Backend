@@ -6,8 +6,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCorsPolicy", builder =>
+    {
+        builder
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .SetIsOriginAllowed(origin => true);
+    });
+});
 
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ChallengeN5DbContext>(options => options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:DefaultConnection").Value));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -30,11 +41,11 @@ using (var scope = app.Services.CreateScope())
 
     dbContext.Database.EnsureCreated();
 
-    if (dbContext.Users.FirstOrDefault(u => u.Username == "admin") == null)
+    if (dbContext.Users.FirstOrDefault(u => u.Username == "admin@admin.com") == null)
     {
         var adminUser = new User
         {
-            Username = "admin",
+            Username = "admin@admin.com",
             Password = "admin"
         };
 
@@ -89,6 +100,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Enable CORS
+app.UseCors("MyCorsPolicy");
 
 app.UseAuthorization();
 

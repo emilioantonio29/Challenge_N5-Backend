@@ -19,6 +19,11 @@ namespace ChallengeN5.Data.Repositories.DataAccess
             _context = context;
         }
 
+        public async Task<List<PermissionType>> GetPermissionsList()
+        {
+            return await _context.PermissionTypes.ToListAsync();
+        }
+
         public async Task<PermissionType> GetPermissionTypeById(int id)
         {
             return await _context.PermissionTypes.FirstOrDefaultAsync(u => u.Id == id);
