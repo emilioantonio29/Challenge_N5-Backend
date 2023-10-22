@@ -1,10 +1,27 @@
 using ChallengeN5.Business.Process;
+using ChallengeN5.Business.Utils;
 using ChallengeN5.Data.ChallengeN5_DbContext;
 using ChallengeN5.Data.Entities;
 using ChallengeN5.Data.Repositories.DataAccess;
+using ChallengeN5.Data_ElasticSearch;
 using Microsoft.EntityFrameworkCore;
+using Nest;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// ElasticSearchConfig
+builder.Services.AddSingleton<IElasticSearchService, ElasticSearchService>();
+var elasticsearchUrl = builder.Configuration.GetSection("ElasticSearch:Url").Value;
+var defaultIndex = builder.Configuration.GetSection("ElasticSearch:DefaultIndex").Value;
+
+builder.Services.AddSingleton<IElasticClient>(sp =>
+{
+    var settings = new ConnectionSettings(new Uri(elasticsearchUrl))
+        .DefaultIndex(defaultIndex)
+        .DisableDirectStreaming();
+
+    return new ElasticClient(settings);
+});
 
 // Configure CORS
 builder.Services.AddCors(options =>
@@ -28,6 +45,8 @@ builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<PermissionRepository>();
 builder.Services.AddScoped<PermissionTableRepository>();
 builder.Services.AddScoped<PermissionTypeRepository>();
+builder.Services.AddScoped<ElasticSearchService>();
+builder.Services.AddScoped<ElasticSearchLog>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

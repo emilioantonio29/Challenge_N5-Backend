@@ -13,3 +13,5 @@ C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\De
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\Debug\net6.0\ChallengeN5.Data.pdb
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ChallengeN5.Business.csproj.AssemblyReference.cache
 C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\obj\Debug\net6.0\ChallengeN5.Business.csproj.CopyComplete
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\Debug\net6.0\ChallengeN5.Data_ElasticSearch.dll
+C:\Users\Emili\source\repos\Challenge_N5\ChallengeN5\ChallengeN5.Business\bin\Debug\net6.0\ChallengeN5.Data_ElasticSearch.pdb

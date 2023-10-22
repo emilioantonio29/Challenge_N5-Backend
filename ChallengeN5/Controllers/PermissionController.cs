@@ -18,37 +18,37 @@ namespace ChallengeN5.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPermissions()
         {
-            return await _permissionProcess.GetPermissionsProcess();
+            return await _permissionProcess.GetPermissionsProcess("GetPermissions");
         }
 
         [HttpGet]
         public async Task<IActionResult> GetPermissionTypes()
         {
-            return await _permissionProcess.GetPermissionTypesProcess();
+            return await _permissionProcess.GetPermissionTypesProcess("GetPermissionTypes");
         }
 
         [HttpGet]
         public async Task<IActionResult> GetPermissionsRange([FromQuery] PermissionListRangeViewModel data)
         {
-            return await _permissionProcess.GetPermissionsRangeProcess(data);
+            return await _permissionProcess.GetPermissionsRangeProcess(data, "GetPermissionsRange");
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPermissionById(int id)
         {
-            return await _permissionProcess.GetPermissionByIdProcess(id);
+            return await _permissionProcess.GetPermissionByIdProcess(id, "GetPermissionById");
         }
 
         [HttpGet("{searchValue}")]
         public async Task<IActionResult> GetPermissionBySearchValue(string searchValue)
         {
-            return await _permissionProcess.GetPermissionsBySearchValueProcess(searchValue);
+            return await _permissionProcess.GetPermissionsBySearchValueProcess(searchValue, "GetPermissionBySearchValue");
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdatePermission([FromBody] PermissionViewModel data)
         {
-            return await _permissionProcess.UpdatePermissionProcess(data);
+            return await _permissionProcess.UpdatePermissionProcess(data, "UpdatePermission");
         }
     }
 }

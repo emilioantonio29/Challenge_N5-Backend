@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChallengeN5.Data\ChallengeN5.Data.csproj" />
+    <ProjectReference Include="..\ChallengeN5.Data_ElasticSearch\ChallengeN5.Data_ElasticSearch.csproj" />
   </ItemGroup>
 
 </Project>
