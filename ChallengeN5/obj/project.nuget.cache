@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Amvja6rh+I+5kocIXV29MNPZHrfmd+Jz7TMGErgYBw76reLdCgooO4T7ajxLfdN/OAzWNEDOrSHfodewZCf4+w==",
+  "dgSpecHash": "TBLw+xU/mGEe9x1j3ckwKzaD8ry+a4kLqtkh6n9DrFG03+BwGf6mEQLChQS3sYpA5hHI/wn8qcwYSFVODMC1NQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5\\ChallengeN5.csproj",
+  "projectFilePath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5\\ChallengeN5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emili\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Emili\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

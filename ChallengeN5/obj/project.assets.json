@@ -4189,11 +4189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5\\ChallengeN5.csproj",
+      "projectUniqueName": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5\\ChallengeN5.csproj",
       "projectName": "ChallengeN5",
-      "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5\\ChallengeN5.csproj",
+      "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5\\ChallengeN5.csproj",
       "packagesPath": "C:\\Users\\Emili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5\\obj\\",
+      "outputPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -4216,11 +4216,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Business\\ChallengeN5.Business.csproj": {
-              "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Business\\ChallengeN5.Business.csproj"
+            "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5.Business\\ChallengeN5.Business.csproj": {
+              "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5.Business\\ChallengeN5.Business.csproj"
             },
-            "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Data\\ChallengeN5.Data.csproj": {
-              "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\ChallengeN5\\ChallengeN5.Data\\ChallengeN5.Data.csproj"
+            "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5.Data\\ChallengeN5.Data.csproj": {
+              "projectPath": "C:\\Users\\Emili\\source\\repos\\Challenge_N5\\Challenge_N5-Backend\\ChallengeN5.Data\\ChallengeN5.Data.csproj"
             }
           }
         }
